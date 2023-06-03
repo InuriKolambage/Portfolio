@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/65a7d2bef5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/logo.png" class="logo" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Computer Science Undergraduate</p>
+                <h1>Hi, I'm <span>Inuri</span> <br>Pasanka Kolambage</h1>
+            </div>
+        </div>
+    </div>
+    <!-----------about---------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/inuri.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>A dedicated and motivated Computer Science 1st year undergraduate with
+                         excellent interpersonal and communication skills, leadership skills
+                          and strong desire of problem solving. Always looking for a challenging 
+                          professional working environment to enhance learning experience and 
+                          achieve organizational goals.</p>
+                          <div class="tab-title">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('interests')">Interests</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                          </div>
+                          <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li>HTML/CSS</li>
+                                <li>Java</li>
+                                <li>Python</li>
+                                <li>My SQL</li>
+                                <li>Figma</li>
+                            </ul>
+                          </div>
+                          <div class="tab-contents" id="interests">
+                            <ul>
+                                <li>UI designing</li>
+                                <li>Web Development</li>
+                                <li>Programming</li>
+                                <li>Presenting</li>
+                                <li>Volunteering</li>
+                            </ul>
+                          </div>
+                          <div class="tab-contents" id="education">
+                            <ul>
+                                <li>2012 - 2020 <br><span>Devi Balika Vidyalaya - Colombo 08</span><br>Physical Science Stream</li>
+                                <li>2022 - Present <br><span>University of Westminster, UK</span><br>BSc (Hons) in Computer Science</li>
+                                
+                            </ul>
+                          </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------Projects----------------------->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="project-list">
+                <div>
+                    <h2>MARCH 2023 - PRESENT</h2>
+                    <p>Developing web-based scholarship
+                        system for Informatics Institute of technology.</p> 
+                </div>
+                <div>
+                    <h2>MAY 2023 - PRESENT</h2>
+                    <p>Developing web-based taxi-booking 
+                        system for Informatics Institute of technology.</p> 
+                </div>
+                <div>
+                    <h2>FEBRUARY 2023</h2>
+                    <p>Developing sports website.</p>   
+                </div>
+                <div>
+                    <h2>JANUARY 2023</h2>
+                    <p>Creating a program for seat booking
+                        system in theatre.</p>   
+                </div>
+                <div>
+                    <h2>DECEMBER 2022</h2>
+                    <p>Developing CD inventory project.</p>   
+                </div>
+                <div>
+                    <h2>DECEMBER 2022</h2>
+                    <p>Creating a program to predict
+                        progression outcomes at the end of each
+                        academic year for university.</p>    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------contact-------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>Kolambageip@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+94760456421</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100069716486518&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://instagram.com/inuri_kolambage?igshid=OTk0YzhjMDVlZA=="><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/inuri-kolambage-79773925b"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="Images/Personal CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<script src="script.js"></script>  
+    
+</body>
+</html>
